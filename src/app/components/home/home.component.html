@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Rectangle</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image width="150px" height="150px" src="../../../assets/rectangle.png" alt="Photo of a Shiba Inu">
+
+                <div class="col">
+                    <select (change)="selectOperationHandler($event)">
+                      <option default>Pick an operation </option>
+                      <option>Area</option>
+                      <option>Perimeter</option>
+                    </select>
+                  </div>
+
+                <mat-card-actions>
+                  <button mat-button (click)="gotoRectangle()">Select</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    
+          <div class="col">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Circle</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image width="150px" height="150px" src="../../../assets/cercle.png" alt="Photo of a Shiba Inu">
+                <div class="col">
+                  <select (change)="selectOperationHandler($event)">
+                    <option default>Pick an operation </option>
+                    <option>Area</option>
+                    <option>Perimeter</option>
+                  </select>
+                </div>
+                <mat-card-actions>
+                  <button mat-button (click)="goToCircle()">Select</button>
+                </mat-card-actions>
+              </mat-card>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Square</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image width="150px" height="150px" src="../../../assets/carre.svg" alt="Photo of a Shiba Inu">
+                <div class="col">
+                  <select (change)="selectOperationHandler($event)">
+                    <option default>Pick an operation </option>
+                    <option>Area</option>
+                    <option>Perimeter</option>
+                  </select>
+                </div>
+                <mat-card-actions>
+                  <button mat-button (click)="goToSquare()">Select</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    
+          <div class="col">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Triangle</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image width="150px" height="150px" src="../../../assets/triangle.png" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <div class="col">
+                    <select (change)="selectOperationHandler($event)">
+                      <option default>Pick an operation </option>
+                      <option>Area</option>
+                      <option>Perimeter</option>
+                    </select>
+                  </div>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button (click)="gotoTriangle()">Select</button>
+                </mat-card-actions>
+              </mat-card>
+          </div>
+    </div>
+</div>
